@@ -6,10 +6,10 @@ class Personagem:
         self._rank= rank
 
     def receberDano(self, dano):
+        self._vida -= dano
         print(f"{self._vida} - {dano}")
 
     def verificarVida(self):
-        self._vida -= dano
         if self._vida <= 0:
             print(f"{self._nome} morreu")
         else:
